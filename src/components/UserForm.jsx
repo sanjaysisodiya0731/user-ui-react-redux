@@ -39,11 +39,11 @@ function UserForm({editUser, setEditUser}){
 
     return(
     <form onSubmit={handleSubmit} className="mt-4">
-        <input className="w-full px-4 py-2 border rounded-lg" type="text" placeholder="Enter first name" value={form.first_name} onChange={(e) => setForm({...form, first_name:e.target.value})}/><br/>
-        <input className="w-full px-4 py-2 border rounded-lg" type="text" placeholder="Enter last name" value={form.last_name} onChange={ (e) => setForm({...form, last_name: e.target.value}) }/><br/>
-        <input className="w-full px-4 py-2 border rounded-lg" type="text" placeholder="Enter email" value={form.email} onChange={ (e) => setForm( {...form, email: e.target.value}) }/><br/>
-        <input className="w-full px-4 py-2 border rounded-lg" type="password" placeholder="******" value={form.password} onChange={ (e) => setForm( {...form, password: e.target.value} ) }/><br/>
-        <button className="w-full py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600" type="submit">{ editUser ? "Update User" : "Add User"}</button>
+        <input className="border rounded-sm" type="text" placeholder="Enter first name" value={form.first_name} onChange={(e) => setForm({...form, first_name:e.target.value})}/>
+        <input className="border rounded-sm" type="text" placeholder="Enter last name" value={form.last_name} onChange={ (e) => setForm({...form, last_name: e.target.value}) }/>
+        <input className="border rounded-sm" type="text" placeholder="Enter email" value={form.email} onChange={ (e) => setForm( {...form, email: e.target.value}) }/>
+        <input className="border rounded-sm" type="password" placeholder="******" value={form.password} onChange={ (e) => setForm( {...form, password: e.target.value} ) }/><br/>
+        <button className="border rounded-sm bg-green-300 mt-4 p-2" type="submit">{ editUser ? "Update User" : "Add User"}</button>
     </form>
     )
 }
