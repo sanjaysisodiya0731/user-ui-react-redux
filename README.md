@@ -100,6 +100,6 @@ http://localhost:5173
 
 ![All Users List | Add User](screenshots/add_user.png)
 
-### Complited Task
+### Edit User | Update User | Delete
 
 ![Edit User](screenshots/edit_user.png)
