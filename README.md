@@ -1,4 +1,4 @@
-# 🚀 Practice User CRUD App (Laravel + React + Redux Toolkit)
+# 🚀 User Management System (Laravel + React + Redux Toolkit)
 
 This is a full-stack User Management (CRUD) application built using Laravel (API) and React with Redux Toolkit for state management.
 
