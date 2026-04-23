@@ -4,7 +4,7 @@ import { usersAPI, addUserAPI, deleteUserAPI, updateUserAPI } from "./userAPI";
 
 export const fetchUsers = createAsyncThunk('users/fetch', async () => {
     const response = await usersAPI();
-    return response.data.data;
+    return response.data.data.data;
 });
 
 export const addUser = createAsyncThunk('users/add', async (data) => {
